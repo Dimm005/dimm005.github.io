@@ -113,6 +113,7 @@ function game() {
             if (playerScore == 5) {
                 gameOver.textContent = "You won the battle!";
                 mainBlock.appendChild(gameOver);
+                window.scrollBy(0, window.innerHeight);
                 playerScore = 0;
                 computerScore = 0;
                 return;
@@ -120,6 +121,7 @@ function game() {
             if (computerScore == 5) {
                 gameOver.textContent = "You lose the battle!";
                 mainBlock.appendChild(gameOver);
+                window.scrollBy(0, window.innerHeight);
                 playerScore = 0;
                 computerScore = 0;
                 return;
