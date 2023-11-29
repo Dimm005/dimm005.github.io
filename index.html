@@ -3,55 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock, paper, scissors!</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <script type="text/javascript" src="./scripts/rps_script.js" defer></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron">
+    <script src="./scripts/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <div id="header">
-            <h1>Rock, paper, scissors!</h1>
-            <div id="rules">
-                <div id="rules_title">There are some rules:</div>
-                <div id="rules_text">
-                    <p>Rock beats scissors</p>
-                    <p>Paper beats rock</p>
-                    <p>Scissors beat paper</p>
-                    <p>You and the computer make your choice and then we'll see who wins!</p>
-                    <p>The game lasts until one of the players get 5 victories</p>
-                </div>
-            </div>
-        </div>
-    </header>
     <main>
-        <div id="invitation">
-            Let's play the game! Make your choice!
+        <div id="calculator">
+            <div id="display"><span id="number_display"></span><span id="sign_display"> </span></div>
+        <div id="keyboard">
+
+            <div class="button digit" id="7">7</div>
+            <div class="button digit" id="8">8</div>
+            <div class="button digit" id="9">9</div>
+            <div class="button operator" id="+">+</div>
+
+            <div class="button digit" id="4">4</div>
+            <div class="button digit" id="5">5</div>
+            <div class="button digit" id="6">6</div>
+            <div class="button operator" id="-">-</div>
+
+            <div class="button digit" id="1">1</div>
+            <div class="button digit" id="2">2</div>
+            <div class="button digit" id="3">3</div>
+            <div class="button operator" id="*">*</div>
+
+            <div class="button digit" id="0">0</div>
+            <div class="button digit" id=".">.</div>
+            <div class="button" id="change_button">+/-</div> 
+            <div class="button operator" id="/">/</div>
+
+            <div class="button big" id="backspace_button">Backspace</div>
+            <div class="button big" id="clear_button">C</div>
+            <div class="button big" id="equal_button">=</div>
+
         </div>
-        <div id="buttons_container">
-            <button id="rock_btn" class="choice_btn">Rock</button>
-            <button id="paper_btn" class="choice_btn">Paper</button>
-            <button id="scissors_btn" class="choice_btn">Scissors</button>
         </div>
-        <div id="current_game">
-            <div id="player">
-                <div id="player_lbl">Your choice:</div>
-                <div id="player_choice" class="choice_made"></div>
-            </div>
-            <div id="computer">
-                <div id="computer_lbl">Computer's choice:</div>
-                <div id="computer_choice" class="choice_made"></div>
-            </div>
-        </div>
-        <div id="round_result"></div>
-        <div id="score_container">
-            <div id="player_total" class="total">
-                <p>Your total score: <span></span></p>
-            </div>
-            <div id="computer_total" class="total">
-                <p>Computer total score: <span></span></p>
-            </div>
-        </div>
-    </main>   
+    </main>
 </body>
 </html>
