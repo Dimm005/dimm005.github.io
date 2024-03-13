@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik">
+    <link rel="icon" sizes="180x180" href="apple-touch-icon.png">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest"> -->
+</head>
+<body>
+    <div id="main_container">
+        <div id="left_panel">
+            <div id="logo_container">
+                <div id="logo">
+                    <img src="Images/odin-lined.png" alt="Odin Logo" id="logo_image">
+                </div>
+                <div id="logo_text">
+                    <p>ODIN</p>
+                </div>
+            </div>
+            <div id="image_info">
+                Photo by <a href="https://unsplash.com/@33bevanda?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Borna Bevanda</a> on <a href="https://unsplash.com/photos/gray-tabby-kitten-leaning-on-white-wall-VwqecUsYKvs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Unsplash</a>
+            </div>
+        </div>
+        <div id="right_panel">
+            <div id="form_description">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p>Sign up <em>now</em> to get started.</p>
+                <p></p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div id="form">
+                <h2>Let's do this!</h2>
+                <form action="https://httpbin.org/post" method="post" id="sign_up_form">
+                                <div id="form_container">
+                                    <div class="input_element">
+                                        <label for="first_name">FIRST NAME*</label>
+                                        <input type="text" name="first_name" id="first_name" minlength="3" maxlength="20" required>
+                                    </div>
+                                    <div class="input_element">
+                                        <label for="last_name">LAST NAME*</label>
+                                        <input type="text" name="last_name" id="last_name" minlength="3" maxlength="30" required>
+                                    </div>
+                                    <div class="input_element">
+                                        <label for="email">EMAIL*</label>
+                                        <input type="email" name="email" id="email" required>
+                                    </div>
+                                    <div class="input_element">
+                                        <label for="phone">PHONE NUMBER</label>
+                                        <input type="tel" name="phone" id="phone">
+                                    </div>
+                                    <div class="input_element">
+                                        <label for="pass_1">PASSWORD*</label>
+                                        <input type="password" class="password error" name="pass_1" id="pass_1" required minlength="8" maxlength="20">
+                                    </div>
+                                    <div class="input_element">
+                                        <label for="pass_2">CONFIRM PASSWORD*</label>
+                                        <input type="password" class="password error" name="pass_2" id="pass_2" required minlength="8" maxlength="20">
+                                    </div>
+                                    <div id="not_match">*Passwords do not match</div>
+                                </div>
+                    </form>
+            </div>
+            <div id="submit_section">
+                <button type="submit" form="sign_up_form" id="submit_button">Create account</button>
+                <p id="already">Already have an account?<a href="log_in.html" id="log_in">Log in</a></p>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
+
+  
